@@ -2,6 +2,10 @@
 
 This GoLang-built tool is designed to transmit multiple RPC transactions to a specified Solana RPC endpoint. Its core purpose is to assess the transaction throughput, enabling users to determine the maximum Transactions Per Second (TPS) that an RPC can handle.
 
+## Download
+-   [Get the latest version of the tool](https://github.com/thorlabsDev/rpc-bencmark/releases)
+-   Make sure you choose the right version for your OS
+
 ## Features
 - Send multiple transactions concurrently to an RPC endpoint.
 - Measure the success and failure rate of the transactions.
