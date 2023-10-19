@@ -1,0 +1,7 @@
+
+dist/
+.idea/
+*.go
+*.mod
+*.sum
+.goreleaser.yaml
