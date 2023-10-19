@@ -1,6 +1,6 @@
 # Solana RPC Benchmark Tool
 
-This GoLang-built tool is meticulously designed to transmit a multitude of RPC transactions to a specified Solana RPC endpoint. Its core purpose is to assess the transaction throughput, enabling users to determine the maximum Transactions Per Second (TPS) that the RPC can accommodate.
+This GoLang-built tool is designed to transmit multiple RPC transactions to a specified Solana RPC endpoint. Its core purpose is to assess the transaction throughput, enabling users to determine the maximum Transactions Per Second (TPS) that an RPC can handle.
 
 ## Features
 - Send multiple transactions concurrently to an RPC endpoint.
@@ -8,15 +8,8 @@ This GoLang-built tool is meticulously designed to transmit a multitude of RPC t
 - Display the Transactions Per Second (TPS) for both successful and total transactions.
 - Show detailed error reports for failed transactions.
 
-## Prerequisites
-- Go installed on your machine.
-- Go to project directory and run the following code in command prompt/terminal to download required packages.
-  ```bash
-  go mod download
-  ```
-
 ## Usage
-- Run the app
+- Run the binary app
 - You'll be prompted in the console to provide the following:
   - `Enter RPC Endpoint (e.g., http://rpc-us-east-2.thornode.io):` Enter the desired RPC endpoint.
   - `Enter number of workers (concurrent requests || min:1, max:16):` Specify the number of concurrent requests you want to send.
