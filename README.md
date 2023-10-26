@@ -13,7 +13,7 @@ This GoLang-built tool is designed to transmit multiple RPC transactions to a sp
 - Show detailed error reports for failed transactions.
 
 ## Usage
-- Run the binary app
+- Run the binary app in command prompt/terminal
 - You'll be prompted in the console to provide the following:
   - `Enter RPC Endpoint (e.g., http://rpc-us-east-2.thornode.io):` Enter the desired RPC endpoint.
   - `Enter number of workers (concurrent requests || min:1, max:16):` Specify the number of concurrent requests you want to send.
