@@ -8,7 +8,7 @@ This GoLang-built tool is designed to transmit multiple RPC transactions to a sp
 
 ## Features
 - Send multiple transactions concurrently to an RPC endpoint.
-- Set a delay between each transactions.
+- Set a delay between each transaction.
 - Measure the success and failure rate of the transactions.
 - Display the Transactions Per Second (TPS) for both successful and total transactions.
 - Show detailed error reports for failed transactions.
@@ -32,7 +32,7 @@ The program provides a detailed report of:
 - Total successful transactions sent.
 - Total failed transactions.
 - Test duration in seconds.
-- All jobs process duratin in seconds.
+- All jobs process duration in seconds.
 - Sending Transactions Per Second (TPS).
 - Successful Transactions Per Second (TPS).
 - Ping Latency (ms).
@@ -58,12 +58,12 @@ The program provides a detailed report of:
 
 ## Disclaimer
 
-  The information, recommendations, and guidelines provided in this document are presented in good faith and believed to be accurate based on the current state of knowledge and technology. However, they are provided without any warranty or guarantee of any kind, either expressed or implied, including, without limitation, warranties of merchantability or fitness for a particular purpose. Users are advised to exercise their own judgment and discretion when implementing or using the tools and techniques described herein. The authors, contributors, and publishers of this document shall not be held liable for any damages, losses, or consequences, whether direct, indirect, special, incidental, or consequential, arising out of or in connection with the use or reliance on this documentation or any information contained within.
+The information, recommendations, and guidelines provided in this document are presented in good faith and believed to be accurate based on the current state of knowledge and technology. However, they are provided without any warranty or guarantee of any kind, either expressed or implied, including, without limitation, warranties of merchantability or fitness for a particular purpose. Users are advised to exercise their own judgment and discretion when implementing or using the tools and techniques described herein. The authors, contributors, and publishers of this document shall not be held liable for any damages, losses, or consequences, whether direct, indirect, special, incidental, or consequential, arising out of or in connection with the use or reliance on this documentation or any information contained within.
 
 ## Contact Us
 
 For any inquiries, feedback, or to report bugs, please reach out to us via our official Discord server:
 
-[Join Thorlabs Discord Server](https://discord.gg/thorlabs)
+[Join ThorLabs Discord Server](https://discord.gg/thorlabs)
 
 To report a bug or any other issue, kindly submit a ticket within the Discord server. Our dedicated team will review and address your concerns promptly.
