@@ -1,0 +1,7 @@
+{
+  "rpcEndpoint": "http://rpc-us-east-2.thornode.io/",
+  "concurrentRequests": 5,
+  "testDurationSeconds": 10,
+  "showRPCOutput": false,
+  "transactionDelayMilliseconds": 100
+}
