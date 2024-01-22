@@ -8,17 +8,21 @@ This GoLang-built tool is designed to transmit multiple RPC transactions to a sp
 
 ## Features
 - Send multiple transactions concurrently to an RPC endpoint.
+- Set a delay between each transactions.
 - Measure the success and failure rate of the transactions.
 - Display the Transactions Per Second (TPS) for both successful and total transactions.
 - Show detailed error reports for failed transactions.
 
+## Configuration Options
+Here are the configuration options you can specify when running the tool:
+- `rpcEndpoint`: The URL of the RPC endpoint.
+- `concurrentRequests`: The number of concurrent requests to send to the RPC endpoint.
+- `testDurationSeconds`: The duration of the test in seconds.
+- `showRPCOutput`: Whether to display detailed output for each RPC request.
+- `transactionDelayMilliseconds`: The delay between sending each transaction in milliseconds. Adjusting this value can control the rate at which transactions are sent.
+
 ## Usage
-- Run the binary app in command prompt/terminal
-- You'll be prompted in the console to provide the following:
-  - `Enter RPC Endpoint (e.g., http://rpc-us-east-2.thornode.io):` Enter the desired RPC endpoint.
-  - `Enter number of workers (concurrent requests || min:1, max:16):` Specify the number of concurrent requests you want to send.
-  - `Do you want to see the RPC return outputs? (y/n):` Choose whether or not to display the RPC return outputs.
-  - `Enter test duration in seconds (min: 5s, max: 30s):` Specify the duration for which you want to run the test.
+- Execute the binary application in your command prompt or terminal, ensure that you have a valid configuration file located in the same folder as the executable.
 
 ## Output
 The program provides a detailed report of:
@@ -28,9 +32,14 @@ The program provides a detailed report of:
 - Total successful transactions sent.
 - Total failed transactions.
 - Test duration in seconds.
+- All jobs process duratin in seconds.
 - Sending Transactions Per Second (TPS).
 - Successful Transactions Per Second (TPS).
-Detailed error reports for each HTTP error code encountered.
+- Ping Latency (ms).
+- Minimum Response Time (ms).
+- Maximum Response Time: (ms).
+- Average Response Time: (ms).
+- Detailed error reports for each HTTP error code encountered.
 
 ## Best Practices for Effective RPC Throughput Testing
 
