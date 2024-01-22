@@ -16,8 +16,8 @@ This GoLang-built tool is designed to transmit multiple RPC transactions to a sp
 ## Configuration Options
 Here are the configuration options you can specify when running the tool:
 - `rpcEndpoint`: The URL of the RPC endpoint.
-- `concurrentRequests`: The number of concurrent requests to send to the RPC endpoint.
-- `testDurationSeconds`: The duration of the test in seconds.
+- `concurrentRequests`: The number of concurrent requests to send to the RPC endpoint. (min val:1 , max val:16)
+- `testDurationSeconds`: The duration of the test in seconds. (min val:5 , max val:60)
 - `showRPCOutput`: Whether to display detailed output for each RPC request.
 - `transactionDelayMilliseconds`: The delay between sending each transaction in milliseconds. Adjusting this value can control the rate at which transactions are sent.
 
