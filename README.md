@@ -12,12 +12,13 @@ This GoLang-built tool is designed to transmit multiple RPC transactions to a sp
 - Measure the success and failure rate of the transactions.
 - Display the Transactions Per Second (TPS) for both successful and total transactions.
 - Show detailed error reports for failed transactions.
+- Show response time statistics and graphs
 
 ## Configuration Options
 Here are the configuration options you can specify when running the tool:
 - `rpcEndpoint`: The URL of the RPC endpoint.
-- `concurrentRequests`: The number of concurrent requests to send to the RPC endpoint. (min val:1 , max val:16)
-- `testDurationSeconds`: The duration of the test in seconds. (min val:5 , max val:60)
+- `concurrentRequests`: The number of concurrent requests to send to the RPC endpoint.
+- `testDurationSeconds`: The duration of the test in seconds.
 - `showRPCOutput`: Whether to display detailed output for each RPC request.
 - `transactionDelayMilliseconds`: The delay between sending each transaction in milliseconds. Adjusting this value can control the rate at which transactions are sent.
 
@@ -36,10 +37,29 @@ The program provides a detailed report of:
 - Sending Transactions Per Second (TPS).
 - Successful Transactions Per Second (TPS).
 - Ping Latency (ms).
-- Minimum Response Time (ms).
-- Maximum Response Time: (ms).
-- Average Response Time: (ms).
+- Minimum Response Time.
+- Maximum Response Time.
+- Average Response Time.
+- Median Response Time.
+- P90 Response Time.
+- P95 Response Time.
+- P99 Response Time.
 - Detailed error reports for each HTTP error code encountered.
+
+  <img width="791" alt="Screen Shot 2024-04-03 at 00 22 25" src="https://github.com/thorlabsDev/rpc_benchmark/assets/48356842/f4ff2aac-01f2-45da-93ef-1efa38e47b36">
+
+Two plots have been generated to visualize the response times:
+
+- **Box Plot:** Provides a summary of the distribution of response times.
+- **Scatter Plot:** Shows the response times for individual requests in sequence.
+
+You can find these plots in the `results` folder located in the same directory as the executable.
+
+<img width="1563" alt="image" src="https://github.com/thorlabsDev/rpc_benchmark/assets/48356842/4e7765a0-ab33-4b78-9bca-94a0edf35d69">
+
+<img width="1605" alt="image" src="https://github.com/thorlabsDev/rpc_benchmark/assets/48356842/b9f626b5-732a-4995-9220-d9b3d319b47b">
+
+
 
 ## Best Practices for Effective RPC Throughput Testing
 
