@@ -6,3 +6,4 @@ dist/
 *.sum
 .goreleaser.yaml
 *.doc
+run.bat
