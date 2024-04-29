@@ -2,7 +2,7 @@
 
 This GoLang-built tool is designed to transmit multiple RPC transactions to a specified Solana RPC endpoint, primarily to evaluate rate limits and response times. The tool helps users understand how quickly an RPC endpoint can accept and respond to requests, thereby shedding light on the endpoint's capacity and robustness under various loads. It is crucial for identifying potential bottlenecks and optimizing system responsiveness, focusing specifically on rate limits and response times rather than full transaction confirmation metrics.
 
-## Disclaimer: 
+## Disclaimer #1: 
 This tool is intended for diagnostic purposes only and should not be used as the sole basis for performance metrics of any RPC infrastructure. It focuses on assessing the initial handling of transactions rather than full transaction confirmation, and does not provide a complete picture of the endpoint's capabilities. It is not suitable for comparative performance analysis against other RPC services or for promotional purposes.
 
 ## Download
@@ -44,6 +44,7 @@ The program provides a detailed report of:
 - Maximum Response Time.
 - Average Response Time.
 - Median Response Time.
+- Standard Deviation.
 - P90 Response Time.
 - P95 Response Time.
 - P99 Response Time.
@@ -79,7 +80,7 @@ You can find these plots in the `results` folder located in the same directory a
 - **Duration of Test:** Running the test for a very short duration might not give the system enough time to stabilize and show its true performance. Conversely, very long tests might lead to throttling or other limitations kicking in. Find a balance based on your specific needs.
 
 
-## Disclaimer
+## Disclaimer #2:
 
 The information, recommendations, and guidelines provided in this document are presented in good faith and believed to be accurate based on the current state of knowledge and technology. However, they are provided without any warranty or guarantee of any kind, either expressed or implied, including, without limitation, warranties of merchantability or fitness for a particular purpose. Users are advised to exercise their own judgment and discretion when implementing or using the tools and techniques described herein. The authors, contributors, and publishers of this document shall not be held liable for any damages, losses, or consequences, whether direct, indirect, special, incidental, or consequential, arising out of or in connection with the use or reliance on this documentation or any information contained within.
 
